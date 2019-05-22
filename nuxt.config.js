@@ -1,12 +1,10 @@
 require('dotenv').config()
-;['PUBLIC_PATH', 'API_SERVER', 'COOKIE_PATH', 'NO_LOGIN'].forEach(key =>
-  console.log('%s\t: %s', key, process.env[key])
-)
 
 const env = process.env
 const isProd = env.MODE == 'prod'
-const mockServer =
-  'https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock'
+// const mockServer =
+//   'https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock'
+const mockServer = 'http://yapi.demo.qunar.com/mock/68321'
 
 // 不能以斜杠结尾
 let apiServer = process.env.API_SERVER
@@ -86,7 +84,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: '',
+    title: 'Optimus',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -94,7 +92,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: '开发平台'
       }
     ],
     link: [
@@ -115,7 +113,7 @@ module.exports = {
    ** Customize the progress bar color
    */
   loading: {
-    color: '#5D81F9'
+    color: '#1890ff'
   },
   /**
    * Share variables, mixins, functions across all style files (no @import needed)
