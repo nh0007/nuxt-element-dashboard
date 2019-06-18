@@ -14,7 +14,7 @@
   - **[设置代理](#设置代理)**
 - **[环境变量](#环境变量)**
 - **[构建](#构建)**
-- **[License](#license)**
+- **[License test](#license)**
 
 ## Feature
 
